@@ -741,10 +741,10 @@
 		});
 		window.onload = async function() { // Jadikan async untuk await initAudioProcessing
 			const params = getQueryParams();
-			const recipientName = params.to || "Nama Anda";
+			const recipientName = params.to || "Istriku, Lusiana";
 			let messageContent = params.message ||
-				`Selamat Ulang Tahun yang terindah!\n\nSemoga hari ini dipenuhi dengan tawa, cinta, dan semua hal yang membuatmu bahagia. Setiap tahun adalah bab baru, semoga bab ini menjadi yang terbaik.\n\nTeruslah menjadi inspirasi dan tebarkan kebaikan di sekitarmu. Kami semua menyayangimu!\n\nJangan lupa buat permintaan ya! ✨`;
-			const senderName = params.from || "Sahabatmu";
+				`Selamat Ulang Tahun yang terindah!\n\nSemoga hari ini dipenuhi dengan tawa, cinta, dan semua hal yang membuatmu bahagia. Setiap tahun adalah bab baru, semoga bab ini menjadi yang terbaik.\n\Semoga disetiap masa yang aku lalui selalu ada kamu..\n\nJangan lupa buat permintaan ya! ✨`;
+			const senderName = params.from || "Suamimu";
 			letterGreeting.textContent = `Selamat Ulang Tahun ${recipientName}!`;
 			letterMessage.innerHTML = messageContent.replace(/\n/g, '<br>');
 			letterSignature.innerHTML = `Dengan Cinta,<br>${senderName}`;
